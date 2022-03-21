@@ -1,4 +1,4 @@
-﻿Sakura🌸: 樱花博客主题
+﻿Sakura: 樱花博客主题
 ===
 
 ![Sakura](screenshot.jpg)
@@ -15,10 +15,10 @@
 主题使用说明：<https://2heng.xin/theme-sakura/>
 
 
-#### 建议安装的插件☆
+### 建议安装的插件☆
 Hermit X，基于 Aplayer 的播放器。
 
-#### 确认兼容的插件
+### 确认兼容的插件
 Easy WP SMTP，邮件支持。
 WP Statistics，统计插件，主题可选择其接口以作页面访问计数。
 Login LockDown，登陆尝试限制，避免前端登陆爆破。
@@ -32,7 +32,7 @@ Yoast SEO，搜索引擎优化。
 
 其他插件我没用过，不保证兼容性。
 
-#### CDN 优化和图床使用
+### CDN 优化和图床使用
 
 使用了CDN后评论定位不正确？
 如果使用了 CDN 请在 WordPress 根目录的配置文件 wp-config.php 最后加上这段：
@@ -45,29 +45,29 @@ if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
 
 图床建议使用CDN + 七牛云 上传图片后放置于md文章内。
 
-#### 功能使用示例
+### 功能使用示例
 https://2heng.xin/theme-sakura/#toc-head-29
 
-#### 注意事项
+### 注意事项
 重要★★：
 主题下载后请把文件夹名字改回 Sakura，也即，保证主题路径为 wp-content/themes/Sakura/。
 
 启用新主题/插件前备份数据库是一个良好的习惯。
 
-#### 写作规范
+### 写作规范
 主题遵循 HTML5 规范，正文部分样式完全兼容标准 Markdown 语法，因此也建议配合 WP Editor.md 插件使用 Markdown 写作，可参考《Markdown 编辑器语法指南》。
 
 主题演示站有一篇 Markdown 语法展示，文章源码在这里。
 
-#### API
+### API
 下面是一些主题内已经带有的接口，无需重复构建：
 Cookie：see https://2heng.xin/2018/05/12/add-a-version-control-for-cookies/
 
-#### 兼容性版本
-##### 服务器端
+### 兼容性版本
+#### 服务器端
 WordPress 版本：4.8+
 PHP 版本：7.1+
 
-##### 前端
+#### 前端
 
 兼容主流 Chromium 内核浏览器、FireFox 浏览器。不兼容 IE （360、QQ 等双核浏览器请关闭 IE 模式）。
