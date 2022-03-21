@@ -1,7 +1,7 @@
 ﻿Sakura: 樱花博客主题
 ===
 
-![Sakura](screenshot.jpg)
+![Sakura](http://cdn-md.littletrue.cn/picgo/screenshot.jpg)
 
 ![PHP version](https://img.shields.io/badge/PHP-7.1+-4F5B93.svg?style=flat-square&logo=php)
 ![WP version](https://img.shields.io/badge/WordPress-5.3-0073aa.svg?style=flat-square&logo=wordpress)
