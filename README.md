@@ -1,7 +1,5 @@
-﻿Sakura🌸: 樱花庄的白猫博客主题
+﻿Sakura🌸: 樱花博客主题
 ===
-
-中文 | [Engilsh](README-en.md)
 
 ![Sakura](screenshot.jpg)
 
@@ -11,24 +9,65 @@
 [![Github commits (since latest release)](https://img.shields.io/github/commits-since/mashirozx/Sakura/latest/dev.svg?style=flat-square&logo=git&color=important)](https://github.com/mashirozx/Sakura/commits/dev)
 [![](https://data.jsdelivr.com/v1/package/gh/moezx/cdn/badge)](https://www.jsdelivr.com/package/gh/moezx/cdn)
 
-在 Louie 基于 Fuzzz 的 [Akina](http://www.akina.pw/themeakina) 主题修改的主题 [Siren](https://github.com/louie-senpai/Siren) 基础上三次修改 =.=
+基于sakura 3.x版本的博客主题进行二次开源: https://github.com/mashirozx/sakura/tree/3.x
 
-两位前辈做得已经很棒了，或许我所做的只是把他们的代码弄得凌乱不堪吧 :)
 
-特别感谢 [@Spirit](https://github.com/spirit1431007) 对本项目的贡献！
+主题使用说明：<https://2heng.xin/theme-sakura/>
 
-注意：建议 `git clone` 下载（[简易 Git 使用指南](https://github.com/mashirozx/Sakura/wiki/Git-%E4%B8%8B%E8%BD%BD%E3%80%81%E6%9B%B4%E6%96%B0%E6%8C%87%E5%8D%97)）；如果选择下载压缩包，**解压后记得把文件夹名改回 `Sakura`，也即保证主题路径为 `/wp-content/themes/Sakura/`**；主题设置在 `菜单-外观-Sakura 主题设置` 中；DIY 的时候建议采用[子主题](https://github.com/mashirozx/Sakura/tree/child) 并勾选 `Sakura 主题设置-CDN-本地调用主题 js、css 文件`；请留意主题说明里的其他注意事项。
 
-主题使用说明见：<https://2heng.xin/theme-sakura/>
+#### 建议安装的插件☆
+Hermit X，基于 Aplayer 的播放器。
 
-本仓库国内镜像：<https://git.moezx.cc/mirrors/sakura>
+#### 确认兼容的插件
+Easy WP SMTP，邮件支持。
+WP Statistics，统计插件，主题可选择其接口以作页面访问计数。
+Login LockDown，登陆尝试限制，避免前端登陆爆破。
+Wordfence Security，避免爆破和评论注入。提醒：该插件将在数据库中记录访客信息，数据库体积将略有增大。
+Akismet Anti-Spam，垃圾评论过滤。
+AMP，生成AMP 页面，效果就是这样，有利于提升 Google 排名。
+Autoptimize，页面压缩。
+Glue for Yoast SEO & AMP，AMP 增强，需配合 Yoast SEO 及 AMP 插件使用。
+WP Super Cache，页面缓存，为访客自动生成缓存版网页，提升访问速度。
+Yoast SEO，搜索引擎优化。
 
-主题交流群：860262481
+其他插件我没用过，不保证兼容性。
 
-希望你喜欢！
+#### CDN 优化和图床使用
 
-### 打赏支持~
-[微信支付](https://view.moezx.cc/images/2018/05/28/WeChanQR.png) | [支付宝](https://view.moezx.cc/images/2018/05/28/AliPayQR.jpg) | [PayPal](https://paypal.me/mashirozx)
+使用了CDN后评论定位不正确？
+如果使用了 CDN 请在 WordPress 根目录的配置文件 wp-config.php 最后加上这段：
+```java
+if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    $list = explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']);
+    $_SERVER['REMOTE_ADDR'] = $list[0];
+}
+```
 
-### 需要服务器吗？
-[![](https://www.vultr.com/media/banners/banner_728x90.png)](https://www.vultr.com/?ref=7674346)
+图床建议使用CDN + 七牛云 上传图片后放置于md文章内。
+
+#### 功能使用示例
+https://2heng.xin/theme-sakura/#toc-head-29
+
+#### 注意事项
+重要★★：
+主题下载后请把文件夹名字改回 Sakura，也即，保证主题路径为 wp-content/themes/Sakura/。
+
+启用新主题/插件前备份数据库是一个良好的习惯。
+
+#### 写作规范
+主题遵循 HTML5 规范，正文部分样式完全兼容标准 Markdown 语法，因此也建议配合 WP Editor.md 插件使用 Markdown 写作，可参考《Markdown 编辑器语法指南》。
+
+主题演示站有一篇 Markdown 语法展示，文章源码在这里。
+
+#### API
+下面是一些主题内已经带有的接口，无需重复构建：
+Cookie：see https://2heng.xin/2018/05/12/add-a-version-control-for-cookies/
+
+#### 兼容性版本
+##### 服务器端
+WordPress 版本：4.8+
+PHP 版本：7.1+
+
+##### 前端
+
+兼容主流 Chromium 内核浏览器、FireFox 浏览器。不兼容 IE （360、QQ 等双核浏览器请关闭 IE 模式）。
