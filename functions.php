@@ -1910,3 +1910,34 @@ function permalink_tip()
 }
 add_action('admin_notices', 'permalink_tip');
 //code end
+
+/**
+ * 统计全站总访问量/今日总访问量/当前是第几个访客
+ * @return [type] [description]
+ */
+function wb_site_count_user(){
+    $addnum = rand(5,10);  //每个访客增加的访问数 5 - 10的随机数
+    session_start();
+    $date = date('ymd',time());
+    if(!isset($_SESSION['wb_'.$date]) && !$_SESSION['wb_'.$date]){        
+        $count = get_option('site_count');
+        if(!$count || !is_array($count)){
+            $newcount = array(
+                'all' => 8377670,
+                'date' => $date,
+                'today' => $addnum
+            );
+            update_option( 'site_count', $newcount );
+        }else{
+            $newcount = array(
+                'all' => ($count['all']+$addnum),
+                'date' => $date,
+                'today' => ($count['date'] == $date) ? ($count['today']+$addnum) : $addnum
+            );
+            update_option( 'site_count', $newcount );
+        }
+        $_SESSION['wb_'.$date] = $newcount['today'];
+    }
+    return;
+}
+add_action('init', 'wb_site_count_user');

@@ -159,5 +159,6 @@
         data-theme="orange">
     </div>
 <?php endif; ?>
+<script src="/live2d_girls/autoload.js"></script>
 </body>
 </html>
