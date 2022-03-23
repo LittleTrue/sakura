@@ -386,7 +386,7 @@ function optionsframework_options()
             'v1' => __('Independent line', 'sakura'), /*独立成行*/
         ));
 
-    $options[] = array( // modify-- 增加封面图片URL
+    $options[] = array(
         'name' => __('Cover manifest', 'sakura'), /*封面图片库选项*/
         'desc' => __('Select how to call the cover random image', 'sakura'), /*选择封面随机图的调用方式*/
         'id' => 'cover_cdn_options',
@@ -396,9 +396,9 @@ function optionsframework_options()
             'type_1' => __('webp images (optimization)', 'sakura'), /*webp优化随机图*/
             'type_2' => __('built-in api (default)', 'sakura'), /*内置原图随机图*/
             'type_3' => __('custom api (advanced)', 'sakura'), /*外部随机图API*/
-            'type_4' => '内部CDN随机图URL API',
         )
     );
+
     $options[] = array(
         'name' => __('Cover images url', 'sakura'), /*图片库url*/
         'desc' => sprintf(__('Fill in the manifest path for random picture display, please refer to <a href = "https: //github.com/mashirozx/Sakura/wiki/options">Wiki </a>. If you select webp images above, click <a href = "%s">here</a> to update manifest', 'sakura'), rest_url('sakura/v1/database/update')), /*填写 manifest 路径，更多信息请参考<a href="https://github.com/mashirozx/Sakura/wiki/options">Wiki</a>,，如果你在上面选择了webp优化，点击<a href = "%s">这里</a>更新 manifest*/
@@ -1233,14 +1233,6 @@ function optionsframework_options()
         'desc' => __('For sending system mail, the sender address displayed in the user\'s mailbox, do not use Chinese, the default system email address is bibi@your_domain_name', 'sakura'), /*用于发送系统邮件，在用户的邮箱中显示的发件人地址，不要使用中文，默认系统邮件地址为 bibi@你的域名*/
         'id' => 'mail_user_name',
         'std' => 'bibi',
-        'type' => 'text');
-
-    //modify -- 由于和lan文件行级绑定, 后续增加的操作选项只能放这
-    $options[] = array(
-        'name' => '封面图方式4 - 图片cdn url 数组',
-        'desc' => '请输入要随机的封面图cdn url 用,隔开',
-        'id' => 'cover_cdn_url',
-        'std' => '',
         'type' => 'text');
 
     return $options;

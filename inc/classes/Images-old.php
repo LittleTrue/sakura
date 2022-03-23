@@ -142,8 +142,6 @@ class Images
     }
 
     //modify -- 定位 封面图统一处理接口
-    //增加一个针对指定CDN配置重定向的选项
-    //CDN图片url数组放置在数据库中 -- 使用options页面配置输入框在主题设置页面最后一项中, 定位id cover_cdn_url
     public static function cover_gallery() {
         if (akina_option('cover_cdn_options') == "type_2") {
             $img_array = glob(get_template_directory() . "/manifest/gallary/*.{gif,jpg,png}", GLOB_BRACE);
@@ -152,14 +150,6 @@ class Images
             $imgurl = str_replace(get_template_directory(), get_template_directory_uri(), $imgurl);
         } elseif (akina_option('cover_cdn_options') == "type_3") {
             $imgurl = akina_option('cover_cdn');
-        } elseif (akina_option('cover_cdn_options') == "type_4") {
-            // 内置CDN随机图URL
-            $img_url_text = akina_option('cover_cdn_url');
-            $img_array = explode(',',  $img_url_text);
-            //开始随机图片
-            $count = count($img_array);
-            $map = rand(0, $count-1);
-            $imgurl = $img_array[$map];
         } else {
             global $sakura_image_array;
             $img_array = json_decode($sakura_image_array, true);

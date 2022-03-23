@@ -25,10 +25,12 @@ add_action('rest_api_init', function () {
         'methods' => 'GET',
         'callback' => 'cache_search_json',
     ));
+    //modify -- 定位随机封面图API
     register_rest_route('sakura/v1', '/image/cover', array(
         'methods' => 'GET',
         'callback' => 'cover_gallery',
     ));
+    //modify -- 定位随机文章特色图API
     register_rest_route('sakura/v1', '/image/feature', array(
         'methods' => 'GET',
         'callback' => 'feature_gallery',
