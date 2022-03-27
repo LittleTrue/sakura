@@ -34,7 +34,7 @@ mashiro_option.skin_bg3 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img
 mashiro_option.skin_bg4 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/kyotoanimation.png";
 mashiro_option.skin_bg5 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/dot_orange.gif";
 mashiro_option.skin_bg6 = "https://api.mashiro.top/bing/";
-mashiro_option.skin_bg7 = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.2/other-sites/api-index/images/me.png";
+mashiro_option.skin_bg7 = "https://cdn.jsdelivr.net/gh/LittleTrue/sakura-cdn@3.1.2/other-sites/api-index/images/me.png";
 <?php } ?>
 
 mashiro_option.darkmode = <?php if ( akina_option('darkmode') ){ echo 'true'; } else { echo 'false'; } ?>;

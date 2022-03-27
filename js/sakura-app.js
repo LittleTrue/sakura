@@ -210,7 +210,7 @@ function attach_image() {
                     }, 1000);
                     if (res.status == 200) {
                         var get_the_url = res.proxy;
-                        $('#upload-img-show').append('<img class="lazyload upload-image-preview" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.2/img/svg/loader/trans.ajax-spinner-preloader.svg" data-src="' + get_the_url + '" onclick="window.open(\'' + get_the_url + '\')" onerror="imgError(this)" />');
+                        $('#upload-img-show').append('<img class="lazyload upload-image-preview" src="https://cdn.jsdelivr.net/gh/LittleTrue/sakura-cdn@3.0.2/img/svg/loader/trans.ajax-spinner-preloader.svg" data-src="' + get_the_url + '" onclick="window.open(\'' + get_the_url + '\')" onerror="imgError(this)" />');
                         lazyload();
                         addComment.createButterbar("图片上传成功~<br>Uploaded successfully~");
                         grin(get_the_url, type = 'Img');
