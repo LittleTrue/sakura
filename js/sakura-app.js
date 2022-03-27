@@ -606,7 +606,7 @@ function coverVideoIni() {
         if (mashiro_global.variables.has_hls){
             loadHls();
         }else{
-            $.getScript("https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.3.3/cdn/js/src/16.hls.js", function(){
+            $.getScript("https://cdn.jsdelivr.net/gh/LittleTrue/Sakura@3.3.3/cdn/js/src/16.hls.js", function(){
                 loadHls();
                 mashiro_global.variables.has_hls = true;
               });

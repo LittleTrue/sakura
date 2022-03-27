@@ -403,7 +403,7 @@ function optionsframework_options()
         'name' => __('Cover images url', 'sakura'), /*图片库url*/
         'desc' => sprintf(__('Fill in the manifest path for random picture display, please refer to <a href = "https: //github.com/mashirozx/Sakura/wiki/options">Wiki </a>. If you select webp images above, click <a href = "%s">here</a> to update manifest', 'sakura'), rest_url('sakura/v1/database/update')), /*填写 manifest 路径，更多信息请参考<a href="https://github.com/mashirozx/Sakura/wiki/options">Wiki</a>,，如果你在上面选择了webp优化，点击<a href = "%s">这里</a>更新 manifest*/
         'id' => 'cover_cdn',
-        'std' => 'https://cdn.jsdelivr.net/gh/mashirozx/sakura@3.3.3',
+        'std' => 'https://cdn.jsdelivr.net/gh/LittleTrue/sakura@3.3.3',
         'type' => 'text');
 
     $options[] = array(

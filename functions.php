@@ -179,14 +179,14 @@ function sakura_scripts()
     if (akina_option('jsdelivr_cdn_test')) {
         wp_enqueue_script('js_lib', get_template_directory_uri() . '/cdn/js/lib.js', array(), SAKURA_VERSION . akina_option('cookie_version', ''), true);
     } else {
-        wp_enqueue_script('js_lib', 'https://cdn.jsdelivr.net/gh/mashirozx/Sakura@' . SAKURA_VERSION . '/cdn/js/lib.min.js', array(), SAKURA_VERSION, true);
+        wp_enqueue_script('js_lib', 'https://cdn.jsdelivr.net/gh/LittleTrue/Sakura@' . SAKURA_VERSION . '/cdn/js/lib.min.js', array(), SAKURA_VERSION, true);
     }
     if (akina_option('app_no_jsdelivr_cdn')) {
         wp_enqueue_style('saukra_css', get_stylesheet_uri(), array(), SAKURA_VERSION);
         wp_enqueue_script('app', get_template_directory_uri() . '/js/sakura-app.js', array(), SAKURA_VERSION, true);
     } else {
-        wp_enqueue_style('saukra_css', 'https://cdn.jsdelivr.net/gh/mashirozx/Sakura@' . SAKURA_VERSION . '/style.min.css', array(), SAKURA_VERSION);
-        wp_enqueue_script('app', 'https://cdn.jsdelivr.net/gh/mashirozx/Sakura@' . SAKURA_VERSION . '/js/sakura-app.min.js', array(), SAKURA_VERSION, true);
+        wp_enqueue_style('saukra_css', 'https://cdn.jsdelivr.net/gh/LittleTrue/Sakura@' . SAKURA_VERSION . '/style.min.css', array(), SAKURA_VERSION);
+        wp_enqueue_script('app', 'https://cdn.jsdelivr.net/gh/LittleTrue/Sakura@' . SAKURA_VERSION . '/js/sakura-app.min.js', array(), SAKURA_VERSION, true);
     }
     wp_enqueue_script('github_card', 'https://cdn.jsdelivr.net/github-cards/latest/widget.js', array(), SAKURA_VERSION, true);
 
@@ -838,7 +838,7 @@ function custom_html()
     if (akina_option('login_bg')) {
         $loginbg = akina_option('login_bg');
     } else {
-        $loginbg = 'https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.2.7/images/hd.png';
+        $loginbg = 'https://cdn.jsdelivr.net/gh/LittleTrue/Sakura@3.2.7/images/hd.png';
     }
     echo '<script type="text/javascript" src="' . get_template_directory_uri() . '/js/login.js"></script>' . "\n";
     echo '<script type="text/javascript">' . "\n";
