@@ -233,8 +233,10 @@ get_header(); ?>
 					console.log("第 " + pagenum + " 页");
 				});
 			});
+
 			//当前文件的相对路径
-			var path="<?php echo __DIR__;?>";
+			var path="<?php echo substr(__DIR__, strpos(__DIR__, '/wp-content'));?>";
+
 			function GetSteamData(limit, page) {
 				$.ajax({
 					type: "get",
@@ -266,6 +268,8 @@ get_header(); ?>
 						$("img.lazy").lazyload(); // 图片懒加载
 					},
 					error: function(data) {
+						
+						console.log(path)
 						alert(data.result);
 					}
 				});
