@@ -203,7 +203,8 @@ get_header(); ?>
 		$steamAPI = "https://api.fogmoe.com/SteamAPI.php";  
 		// 自定义文件加载路径
 		require_once(__DIR__ . "/steam-api-json/classSteamCard.php");
-		$steam = new SteamCard($id, $steamAPI, 3);  // PS: 个人信息图片是实时更新的，有三种样式，默认为Profile，1为"Lite Status"，2为"Card"
+		// PS: 个人信息图片是实时更新的，有三种样式，默认为Profile，1为"Lite Status"，2为"Card"
+		$steam = new SteamCard($id, $steamAPI, 3);  
 		?>
 
 		<div id="steam-game-div"></div>
@@ -232,11 +233,12 @@ get_header(); ?>
 					console.log("第 " + pagenum + " 页");
 				});
 			});
-
+			//当前文件的相对路径
+			var path="<?php echo __DIR__;?>";
 			function GetSteamData(limit, page) {
 				$.ajax({
 					type: "get",
-					url: __DIR__ . "/steam-api-json/GetSteamData.php",
+					url:  path + "/steam-api-json/GetSteamData.php",
 					data: {
 						"limit": limit, // 每页个数
 						"page": page // 页号,第一页 page = 0
