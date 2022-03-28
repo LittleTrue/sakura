@@ -28,6 +28,8 @@
 				</div>
 				<p style="color: #666666;"><?php echo akina_option('footer_info', ''); ?></p>
 			</div>
+			<div class="footer-device">
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 	<div class="openNav no-select">
