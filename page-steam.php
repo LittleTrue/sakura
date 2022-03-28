@@ -202,7 +202,7 @@ get_header(); ?>
 		//境外服务器直接走本地，$steamAPI = "https://你的域名/json/SteamAPI.php"
 		$steamAPI = "http://script.littletrue.cn/steam-page/SteamAPI.php";  
 		// 自定义文件加载路径
-		require_once("steam-api-json/classSteamCard.php");
+		require_once("./steam-api-json/classSteamCard.php");
 		$steam = new SteamCard($id, $steamAPI, 3);  // PS: 个人信息图片是实时更新的，有三种样式，默认为Profile，1为"Lite Status"，2为"Card"
 		?>
 
@@ -236,7 +236,7 @@ get_header(); ?>
 			function GetSteamData(limit, page) {
 				$.ajax({
 					type: "get",
-					url: "/json/GetSteamData.php",
+					url: "./steam-api-json/GetSteamData.php",
 					data: {
 						"limit": limit, // 每页个数
 						"page": page // 页号,第一页 page = 0
