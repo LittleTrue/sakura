@@ -197,10 +197,10 @@ get_header(); ?>
 		// 自定义
 		// 你的SteamID，可以在这里获取:https://steamsignature.com/
 		$id = "76561198284687704";  
-		// 自定义 接口地址
+		// 自定义 接口地址 -- 没有境外服务器不要自建
 		// SteamAPI 接口地址，更推荐你自建。
 		//境外服务器直接走本地，$steamAPI = "https://你的域名/json/SteamAPI.php"
-		$steamAPI = "http://script.littletrue.cn/steam-page/SteamAPI.php";  
+		$steamAPI = "https://api.fogmoe.com/SteamAPI.php";  
 		// 自定义文件加载路径
 		require_once(__DIR__ . "/steam-api-json/classSteamCard.php");
 		$steam = new SteamCard($id, $steamAPI, 3);  // PS: 个人信息图片是实时更新的，有三种样式，默认为Profile，1为"Lite Status"，2为"Card"
