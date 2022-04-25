@@ -22,6 +22,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info" theme-info="Sakura v<?php echo SAKURA_VERSION; ?>">
 			<div class="footertext">
+				<a href="https://beian.miit.gov.cn/">
 				<div class="img-preload">
 					<img src="https://cdn.jsdelivr.net/gh/LittleTrue/sakura-cdn@3.1.9/img/Sakura/images/wordpress-rotating-ball-o.svg">
 					<img src="https://cdn.jsdelivr.net/gh/LittleTrue/sakura-cdn@3.1.9/img/Sakura/images/disqus-preloader.svg">
