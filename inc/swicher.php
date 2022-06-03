@@ -34,7 +34,7 @@ mashiro_option.skin_bg3 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img
 mashiro_option.skin_bg4 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/kyotoanimation.png";
 mashiro_option.skin_bg5 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/dot_orange.gif";
 mashiro_option.skin_bg6 = "https://api.mashiro.top/bing/";
-mashiro_option.skin_bg7 = "https://fastly.jsdelivr.net/LittleTrue/gh/sakura-cdn@3.1.2/other-sites/api-index/images/me.png";
+mashiro_option.skin_bg7 = "https://fastly.jsdelivr.net/gh/LittleTrue/sakura-cdn@3.1.2/other-sites/api-index/images/me.png";
 <?php } ?>
 
 mashiro_option.darkmode = <?php if ( akina_option('darkmode') ){ echo 'true'; } else { echo 'false'; } ?>;
@@ -67,7 +67,7 @@ mashiro_option.entry_content_theme = "<?php echo akina_option('entry_content_the
 <?php if(akina_option('jsdelivr_cdn_test')){ ?>
 mashiro_option.jsdelivr_css_src = "<?php echo get_template_directory_uri() ?>/cdn/css/lib.css?<?php echo SAKURA_VERSION.akina_option('cookie_version', ''); ?>";
 <?php } else { ?>
-mashiro_option.jsdelivr_css_src = "https://fastly.jsdelivr.net/LittleTrue/gh/Sakura@<?php echo SAKURA_VERSION; ?>/cdn/css/lib.min.css";
+mashiro_option.jsdelivr_css_src = "https://fastly.jsdelivr.net/gh/LittleTrue/Sakura@<?php echo SAKURA_VERSION; ?>/cdn/css/lib.min.css";
 <?php } ?>
 <?php if (akina_option('aplayer_server') != 'off'): ?>
 mashiro_option.float_player_on = true;
