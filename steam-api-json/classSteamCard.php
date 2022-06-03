@@ -7,13 +7,13 @@ class SteamCard
 		// Steam信息卡片
 		if ($type == 1) {
 			echo "<div class=\"steam-card-img\"><a href=\"https://steamcommunity.com/profiles/" . $id . 
-			"\" target=\"_blank\"><img class=\"lazy\" src=\"https://fastly.jsdelivr.net/LittleTrue/sakura-cdn@3.7.7/img/svg/loading.svg\" data-src=\"https://steamsignature.com/status/schinese/" . $id . ".png\"></a></div>";
+			"\" target=\"_blank\"><img class=\"lazy\" src=\"https://fastly.jsdelivr.net/LittleTrue/gh/sakura-cdn@3.7.7/img/svg/loading.svg\" data-src=\"https://steamsignature.com/status/schinese/" . $id . ".png\"></a></div>";
 		} elseif ($type == 2) {
 			echo "<div class=\"steam-card-img\"><a href=\"https://steamcommunity.com/profiles/" . $id . 
-			"\" target=\"_blank\"><img class=\"lazy\" src=\"https://fastly.jsdelivr.net/LittleTrue/sakura-cdn@3.7.7/img/svg/loading.svg\" data-src=\"https://steamsignature.com/card/0/" . $id . ".png\"></a></div>";
+			"\" target=\"_blank\"><img class=\"lazy\" src=\"https://fastly.jsdelivr.net/LittleTrue/gh/sakura-cdn@3.7.7/img/svg/loading.svg\" data-src=\"https://steamsignature.com/card/0/" . $id . ".png\"></a></div>";
 		} else {
 			echo "<div class=\"steam-card-img\"><a href=\"https://steamcommunity.com/profiles/" . $id . 
-			"\" target=\"_blank\"><img class=\"lazy\" src=\"https://fastly.jsdelivr.net/LittleTrue/sakura-cdn@3.7.7/img/svg/loading.svg\" data-src=\"https://steamsignature.com/profile/schinese/" . $id . ".png\"></a></div>";
+			"\" target=\"_blank\"><img class=\"lazy\" src=\"https://fastly.jsdelivr.net/LittleTrue/gh/sakura-cdn@3.7.7/img/svg/loading.svg\" data-src=\"https://steamsignature.com/profile/schinese/" . $id . ".png\"></a></div>";
 		}
 		echo "<div class=\"colorline\"></div>";
 
