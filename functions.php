@@ -7,7 +7,8 @@
  * @package Sakura
  */
 
-define('SAKURA_VERSION', wp_get_theme()->get('Version'));
+//define('SAKURA_VERSION', wp_get_theme()->get('Version'));
+define('SAKURA_VERSION', 3.4.2);
 define('BUILD_VERSION', '3');
 
 //ini_set('display_errors', true);
