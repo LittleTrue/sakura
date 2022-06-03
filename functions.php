@@ -188,7 +188,7 @@ function sakura_scripts()
         wp_enqueue_style('saukra_css', 'https://fastly.jsdelivr.net/gh/LittleTrue/Sakura@' . SAKURA_VERSION . '/style.min.css', array(), SAKURA_VERSION);
         wp_enqueue_script('app', 'https://fastly.jsdelivr.net/gh/LittleTrue/Sakura@' . SAKURA_VERSION . '/js/sakura-app.min.js', array(), SAKURA_VERSION, true);
     }
-    wp_enqueue_script('github_card', 'https://cdn.jsdelivr.net/github-cards/latest/widget.js', array(), SAKURA_VERSION, true);
+    wp_enqueue_script('github_card', 'https://fastly.jsdelivr.net/github-cards/latest/widget.js', array(), SAKURA_VERSION, true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
@@ -813,7 +813,7 @@ function custom_login()
     //echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('template_directory') . '/inc/login.css" />'."\n";
     echo '<link rel="stylesheet" type="text/css" href="' . get_template_directory_uri() . '/inc/login.css?' . SAKURA_VERSION . '" />' . "\n";
     //echo '<script type="text/javascript" src="'.get_bloginfo('template_directory').'/js/jquery.min.js"></script>'."\n";
-    echo '<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/jquery/jquery@1.9.0/jquery.min.js"></script>' . "\n";
+    echo '<script type="text/javascript" src="https://fastly.jsdelivr.net/gh/jquery/jquery@1.9.0/jquery.min.js"></script>' . "\n";
 }
 
 add_action('login_head', 'custom_login');
@@ -1477,7 +1477,7 @@ function admin_ini()
 {
     wp_enqueue_style('admin-styles-fix-icon', get_site_url() . '/wp-includes/css/dashicons.css');
     wp_enqueue_style('cus-styles-fit', get_template_directory_uri() . '/inc/css/dashboard-fix.css');
-    wp_enqueue_script('lazyload', 'https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.min.js');
+    wp_enqueue_script('lazyload', 'https://fastly.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.min.js');
 }
 add_action('admin_enqueue_scripts', 'admin_ini');
 

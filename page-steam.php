@@ -216,9 +216,9 @@ get_header(); ?>
 		</div>
 
 		<script type="text/javascript">
-			window.jQuery || document.write('<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"><\/script>')
+			window.jQuery || document.write('<script src="https://fastly.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"><\/script>')
 		</script>
-		<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+		<script src="https://fastly.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				var pagenum = 0;
