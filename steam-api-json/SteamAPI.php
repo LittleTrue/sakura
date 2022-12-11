@@ -41,6 +41,6 @@ function steaminfo($id, $type)
 
 	$error_img = ["https:\/\/steamcdn-a.akamaihd.net\/steam\/apps\/205790\/capsule_184x69.jpg"];  //404的图片，例如："Dota2 Test"，自行增加
 	$response = str_replace("steamcdn-a.akamaihd.net", "media.st.dl.pinyuncloud.com", $response);  //替换图片为大陆节点
-	$info =  str_replace($error_img, "https://data.jsdelivr.com/gh/IMGRU/IMG/2020/05/28/5ece9990c9be7.jpg", $response);
+	$info =  str_replace($error_img, "https://cdn.jsdelivr.net/gh/IMGRU/IMG/2020/05/28/5ece9990c9be7.jpg", $response);
 	return $info;
 }
