@@ -7,7 +7,7 @@
 ![WP version](https://img.shields.io/badge/WordPress-5.3-0073aa.svg?style=flat-square&logo=wordpress)
 [![GitHub release](https://img.shields.io/github/v/release/mashirozx/Sakura.svg?style=flat-square&logo=github)](https://github.com/mashirozx/Sakura/releases/latest)
 [![Github commits (since latest release)](https://img.shields.io/github/commits-since/mashirozx/Sakura/latest/dev.svg?style=flat-square&logo=git&color=important)](https://github.com/mashirozx/Sakura/commits/dev)
-[![](https://cdn.jsdelivr.net/v1/package/gh/moezx/cdn/badge)](https://www.jsdelivr.com/package/gh/moezx/cdn)
+[![](https://gcore.jsdelivr.net/v1/package/gh/moezx/cdn/badge)](https://www.jsdelivr.com/package/gh/moezx/cdn)
 
 基于sakura 3.x版本的博客主题进行二次开源: https://github.com/mashirozx/sakura/tree/3.x
 

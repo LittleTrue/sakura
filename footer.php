@@ -24,8 +24,8 @@
 			<div class="footertext">
 				<a href="https://beian.miit.gov.cn/">
 				<div class="img-preload">
-					<img src="https://cdn.jsdelivr.net/gh/LittleTrue/sakura-cdn@3.1.9/img/Sakura/images/wordpress-rotating-ball-o.svg">
-					<img src="https://cdn.jsdelivr.net/gh/LittleTrue/sakura-cdn@3.1.9/img/Sakura/images/disqus-preloader.svg">
+					<img src="https://gcore.jsdelivr.net/gh/LittleTrue/sakura-cdn@3.1.9/img/Sakura/images/wordpress-rotating-ball-o.svg">
+					<img src="https://gcore.jsdelivr.net/gh/LittleTrue/sakura-cdn@3.1.9/img/Sakura/images/disqus-preloader.svg">
 				</div>
 				<p style="color: #666666;"><?php echo akina_option('footer_info', ''); ?></p>
 			</div>
