@@ -143,7 +143,7 @@ function optionsframework_options()
         'name' => __('Change web background', 'sakura'), /*切换网页背景*/
         'desc' => __('The foreground switches the background of the webpage. There are 8 urls separated by commas. The order corresponds to the foreground scheme tool button position (the order of the buttons is from left to right, top to bottom). If no background is needed, fill in the corresponding position as none.<strong>Note: If the theme is updated from v3.2.3 and below, be sure to change the [Version Control] parameter under the [Other] tab of this configuration page to any new value!</strong>', 'sakura'), /*前台切换网页背景，共8个url，使用英文逗号分隔，顺序对应前台切换主题按钮位置（按钮顺序从左至右，从上至下）,如不需要背景则填写对应位置为none。<strong>注意：如果主题是从v3.2.3及以下更新过来的，请务必将本配置页的【其他】标签下的【版本控制】参数修改为任意新值！</strong>*/
         'id' => 'sakura_skin_bg',
-        'std' => 'none,https://fastly.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/sakura.png,https://fastly.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/plaid2dbf8.jpg,https://fastly.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/star02.png,https://fastly.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/kyotoanimation.png,https://fastly.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/dot_orange.gif,https://api.mashiro.top/bing/,https://fastly.jsdelivr.net/gh/LittleTrue/sakura-cdn@3.1.2/other-sites/api-index/images/me.png',
+        'std' => 'none,https://data.jsdelivr.com/gh/spirit1431007/cdn@1.6/img/sakura.png,https://data.jsdelivr.com/gh/spirit1431007/cdn@1.6/img/plaid2dbf8.jpg,https://data.jsdelivr.com/gh/spirit1431007/cdn@1.6/img/star02.png,https://data.jsdelivr.com/gh/spirit1431007/cdn@1.6/img/kyotoanimation.png,https://data.jsdelivr.com/gh/spirit1431007/cdn@1.6/img/dot_orange.gif,https://api.mashiro.top/bing/,https://data.jsdelivr.com/gh/LittleTrue/sakura-cdn@3.1.2/other-sites/api-index/images/me.png',
         'type' => 'textarea');
 
     $options[] = array(
@@ -403,7 +403,7 @@ function optionsframework_options()
         'name' => __('Cover images url', 'sakura'), /*图片库url*/
         'desc' => sprintf(__('Fill in the manifest path for random picture display, please refer to <a href = "https: //github.com/mashirozx/Sakura/wiki/options">Wiki </a>. If you select webp images above, click <a href = "%s">here</a> to update manifest', 'sakura'), rest_url('sakura/v1/database/update')), /*填写 manifest 路径，更多信息请参考<a href="https://github.com/mashirozx/Sakura/wiki/options">Wiki</a>,，如果你在上面选择了webp优化，点击<a href = "%s">这里</a>更新 manifest*/
         'id' => 'cover_cdn',
-        'std' => 'https://fastly.jsdelivr.net/gh/LittleTrue/sakura@3.3.3',
+        'std' => 'https://data.jsdelivr.com/gh/LittleTrue/sakura@3.3.3',
         'type' => 'text');
 
     $options[] = array(
@@ -1218,7 +1218,7 @@ function optionsframework_options()
         'name' => __('lazyload spinner', 'sakura'),
         'desc' => __('The placeholder to display when the image loads, fill in the image url', 'sakura'), /*图片加载时要显示的占位图，填写图片 url*/
         'id' => 'lazyload_spinner',
-        'std' => 'https://fastly.jsdelivr.net/gh/LittleTrue/sakura-cdn@3.0.2/img/svg/loader/trans.ajax-spinner-preloader.svg',
+        'std' => 'https://data.jsdelivr.com/gh/LittleTrue/sakura-cdn@3.0.2/img/svg/loader/trans.ajax-spinner-preloader.svg',
         'type' => 'text');
 
     $options[] = array(
